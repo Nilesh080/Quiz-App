@@ -53,8 +53,8 @@ const questions = [
 const Body = () => {
   
 
-  const [score, setScore] = useState(s);
-  const [currentQuestion, setCurrentQuestion] = useState(val);
+  const [score, setScore] = useState(s !== null ? s : 0);
+  const [currentQuestion, setCurrentQuestion] = useState(val !== null ? val : 0);
 
   const handleOptionClick = (result) => {
     if (result) {
